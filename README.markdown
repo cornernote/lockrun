@@ -32,6 +32,17 @@ To build and install it from the command line:
     $ gcc lockrun.c -o lockrun
     $ sudo cp lockrun /usr/local/bin/
 
+Ubuntu easy-install:
+
+```
+wget https://raw.githubusercontent.com/cornernote/lockrun/master/lockrun.c
+sudo apt-get install gcc
+gcc lockrun.c -o lockrun
+sudo cp lockrun /usr/local/bin/
+sudo apt-get remove gcc
+sudo apt-get autoremove 
+```
+
 Now we'll find `lockrun` in the usual place: `/usr/local/bin/`.
 
 We'll note that though portable, this program is nevertheless designed
