@@ -36,11 +36,11 @@ Ubuntu easy-install:
 
 ```
 wget https://raw.githubusercontent.com/cornernote/lockrun/master/lockrun.c
-sudo apt-get install gcc
+sudo apt-get -y install gcc
 gcc lockrun.c -o lockrun
 sudo cp lockrun /usr/local/bin/
-sudo apt-get remove gcc
-sudo apt-get autoremove 
+sudo apt-get -y remove gcc
+sudo apt-get  -y autoremove 
 ```
 
 Now we'll find `lockrun` in the usual place: `/usr/local/bin/`.
