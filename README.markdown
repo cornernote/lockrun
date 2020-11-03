@@ -39,6 +39,7 @@ wget https://raw.githubusercontent.com/cornernote/lockrun/master/lockrun.c
 sudo apt-get -y install gcc
 gcc lockrun.c -o lockrun
 sudo cp lockrun /usr/local/bin/
+ln -s /usr/local/bin/lockrun /usr/bin/lockrun
 sudo apt-get -y remove gcc
 sudo apt-get  -y autoremove 
 ```
